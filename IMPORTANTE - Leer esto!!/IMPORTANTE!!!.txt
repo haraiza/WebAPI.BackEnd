@@ -1,0 +1,20 @@
+WebAPI BackEnd
+
+
+Ir a App_Start > WebApiConfig.cs
+
+Despues de las rutas, agregas esto
+
+	config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/html"));
+	config.EnableCors(new EnableCorsAttribute("*", "*", "*")); // Con * le das permiso que el API responda a una solicitud desde cualquier lugar
+
+Eso permite que pueda recibir pedidos desde un FrontEnd que no este dentro de esta solución
+
+
+********************************************************************************
+********************************************************************************
+IMPORTANTE!!!
+Ir a Tools -> NuGet Package Manager -> Package Manager Console
+Install-Package Microsoft.AspNet.WebApi.Cors
+********************************************************************************
+********************************************************************************

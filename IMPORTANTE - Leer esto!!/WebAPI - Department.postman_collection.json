@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "b97ff755-6cd9-4899-b748-5e58aec4f407",
+		"name": "WebAPI - Department",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Department",
+			"item": [
+				{
+					"name": "http://localhost:55550/api/Department",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:55550/api/Department",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55550",
+							"path": [
+								"api",
+								"Department"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:55550/api/Department",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"DepartmentName\": \"Limpieza\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:55550/api/Department",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55550",
+							"path": [
+								"api",
+								"Department"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:55550/api/Department",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"DepartmentId\": 2,\r\n    \"DepartmentName\": \"Nuevo nombre\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:55550/api/Department",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55550",
+							"path": [
+								"api",
+								"Department"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:55550/api/Department/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:55550/api/Department/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55550",
+							"path": [
+								"api",
+								"Department",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "http://localhost:55550/api/Employee",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:55550/api/Employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55550",
+							"path": [
+								"api",
+								"Employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:55550/api/Employee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"EmployeeName\": \"Karen Lopez\",\r\n    \"Department\": \"Contabilidad\",\r\n    \"DateOfJoining\": \"2022-11-05\",\r\n    \"PhotoFileName\": \"anonymous.png\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:55550/api/Employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55550",
+							"path": [
+								"api",
+								"Employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:55550/api/Employee/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:55550/api/Employee/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55550",
+							"path": [
+								"api",
+								"Employee",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:55550/api/Employee",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"EmployeeId\": 3,\r\n    \"EmployeeName\": \"Carolina\",\r\n    \"Department\": \"Casa de niños\",\r\n    \"DateOfJoining\": \"1980-12-11\",\r\n    \"PhotoFileName\": \"anonymous.png\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:55550/api/Employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55550",
+							"path": [
+								"api",
+								"Employee"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

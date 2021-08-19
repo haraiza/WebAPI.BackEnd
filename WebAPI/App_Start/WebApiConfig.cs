@@ -19,6 +19,8 @@ namespace WebAPI
         {
             // Web API configuration and services
 
+            config.EnableCors(new EnableCorsAttribute("*", "*", "*")); // Con * le das permiso que el API responda a una solicitud desde cualquier lugar
+
             // Web API routes
             config.MapHttpAttributeRoutes();
 
@@ -30,7 +32,7 @@ namespace WebAPI
 
             config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/html"));
 
-            config.EnableCors(new EnableCorsAttribute("*", "*", "*")); // Con * le das permiso que el API responda a una solicitud desde cualquier lugar
+            
         }
     }
 }

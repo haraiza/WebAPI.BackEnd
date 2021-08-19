@@ -55,7 +55,7 @@ namespace WebAPI.Controllers
 
 
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                    sd.SelectCommand.Parameters.AddWithValue("@EmployeeName", dep.DepartmentName);
+                    sd.SelectCommand.Parameters.AddWithValue("@DepartmentName", dep.DepartmentName);
                     
 
                     con.Open();
